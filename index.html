@@ -142,8 +142,24 @@
                         <h2 class="mb-4">Total:</h2>
                         <hr />
                     </div>
-                    <div  class="flex justify-center">
-                        <button class="btn  mt-[-26px] px-20">Make Purchase</button>
+                    <div class="flex justify-center">
+                        <!-- <button class="btn  mt-[-26px] px-20">Make Purchase</button> -->
+
+                        <!-- modal button start  -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn mt-[-26px] px-20" onclick="my_modal_5.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_5" class="modal  sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action flex justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+                        <!-- modal button ends -->
                     </div>
                 </div>
             </div>
