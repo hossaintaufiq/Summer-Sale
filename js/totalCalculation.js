@@ -111,3 +111,8 @@ document.getElementById('applyButton').addEventListener('click',function(){
 
      }
 })
+
+// home button 
+document.getElementById('Go-home').addEventListener('click',function() {
+   window.location.reload();
+})
