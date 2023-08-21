@@ -219,8 +219,8 @@
                 <div class="shadow-lg  p-6  rounded-xl">
                     <h2 class="text-[#111] text-2xl font-medium">Have coupon?</h2>
                     <div class="join mt-4 ">
-                        <input type="text" class="input input-bordered join-item font-normal text-xl" placeholder="Coupon code" />
-                        <button class=" btn join-item rounded-r-full bg-[#E527B2] text-white font-semibold text-xl py-2 px-2 disabled">Apply</button>
+                        <input id="input-field" type="text" class="input input-bordered join-item font-normal text-xl" placeholder="Coupon code" />
+                        <button id="applyButton" class=" btn join-item rounded-r-full bg-[#E527B2] text-white font-semibold text-xl py-2 px-2 disabled" disabled>Apply</button>
                     </div>
                 </div>
                 <div class="mt-6">
@@ -239,7 +239,7 @@
 
                         <!-- modal button start  -->
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn mt-[-26px] px-20 font-semibold text-xl bg-[#E527B2] rounded-lg text-white " onclick="my_modal_5.showModal()">Make Purchase</button>
+                        <button disabled id="purchasebutton" class="btn mt-[-26px] px-20 font-semibold text-xl bg-[#E527B2] rounded-lg text-white " onclick="my_modal_5.showModal() ">Make Purchase</button>
                         <dialog id="my_modal_5" class="modal  sm:modal-middle">
                             <form method="dialog" class="modal-box flex flex-col justify-center items-center">
                                 <img src="./images/congo.png" class="w-36 h-36" alt="">
